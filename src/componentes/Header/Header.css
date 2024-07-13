@@ -1,0 +1,89 @@
+.header
+{
+    display: flex;
+    background-color: #262626;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    border-bottom: 4px solid #2271D1;
+}
+
+.header img{
+    width: 10%;
+    height: auto;
+}
+
+.botonesHeader{
+    display: flex;
+    width: 386px;
+    justify-content: space-evenly;
+}
+
+.botonesHeader button{
+    width: 167px;
+    height: 44px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    background-color: transparent;
+    color: white;
+    font-family: serif, sans-serif;
+    gap: 25px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.botonesHeader button:hover{
+    background-color: white;
+    color: black;
+}
+
+#btnHome{
+    color: #2271D1;
+    border-color: #2271D1;
+}
+
+@media (max-width: 780px) and (min-width: 481px)
+{
+    .header
+    {
+        height: 80px;
+    }
+
+    .header img{
+        width: 20%;
+    }
+
+    .botonesHeader{
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .botonesHeader button{
+        width: 45%;
+        height: 44px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .header
+    {
+        height: 80px;
+    }
+
+    .header img{
+        width: 20%;
+    }
+
+    .botonesHeader{
+        width: 150px;
+        justify-content: space-evenly;
+    }
+
+    .botonesHeader button{
+        width: 70px;
+        height: 44px;
+    }
+}

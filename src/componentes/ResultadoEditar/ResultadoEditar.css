@@ -1,0 +1,35 @@
+.containerResultado
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+    background: rgba(24, 159, 128, 0.5);
+}
+
+.oculto{
+    display: none;
+}
+
+.ResultadoDecripcion
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    border: 3px white solid;
+    border-radius: 0 0 15px 15px;
+    color: white;
+    gap: 0;
+    background: rgba(24, 159, 128, 0.8);
+    justify-content: space-around;
+}
+
+.ResultadoDecripcion img
+{
+    width: 300px;
+    margin: 0 auto;
+}

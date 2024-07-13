@@ -1,0 +1,36 @@
+.CardsContainer{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    background-color: #262626;
+    color: white;
+}
+
+@media (max-width: 780px) and (min-width: 481px)
+{
+    .CardsContainer{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        margin: auto;
+        background-color: #262626;
+        color: white;
+    }
+}
+
+@media (max-width: 480px)
+{ 
+    .CardsContainer{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        margin: auto;
+        background-color: #262626;
+        color: white;
+        border: 1px white solid;
+    }
+}

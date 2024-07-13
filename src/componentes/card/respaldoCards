@@ -1,0 +1,38 @@
+import "./card.css"
+import ventanaEditar from "js/editarvideo"
+import { conexionAPI } from "data/conexionAPI"
+
+const lista = document.querySelector("[data-lista]")
+
+function Cards(props){
+    return(
+        <div className={ props.color }>
+            <img src="/media/front3.jpg"/>
+            <div className="botoneraCards">
+                <div className="botonesCards">
+                    <img src="/media/borrar.png"/><p>BORRAR</p>
+                </div>
+                <div className="botonesCards" onClick={ventanaEditar}>
+                    <img src="/media/editar.png"/><p>EDITAR</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+async function listarVideos(){
+    try
+    {
+        const listaAPI = await conexionAPI.listarVideos();
+        listaAPI.forEach(elemento => {
+            lista.appendChild(Cards(elemento.id, elemento.url));
+        });
+
+    }catch{
+        lista.innerHTML=`<h2>No fue posible cargar la lista de productos</h2>`;
+    }
+}
+
+listarVideos();
+
+export default Cards
